@@ -53,7 +53,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
 
                 <div className="p-4 bg-gray-50/50 dark:bg-slate-900/50 border-t border-gray-200 dark:border-slate-700 flex flex-col sm:flex-row gap-3 justify-between items-center">
                     <a 
-                      href="mailto:yemeadoridane@gmail.com?subject=Contact%20depuis%20le%20Calendrier%20ADORIS&body=Bonjour,"
+                      href="mailto:yemeadorisdane@gmail.com?subject=Contact%20depuis%20le%20Calendrier%20ADORIS&body=Bonjour,"
                       className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline"
                     >
                       Nous écrire
