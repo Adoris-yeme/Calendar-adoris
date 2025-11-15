@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADORIS Calendar</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<style>
+    @keyframes pulse-slow {
+        50% { opacity: .7; }
+    }
+    .animate-pulse-slow {
+        animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .bg-grid-pattern {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    }
+    .dark .bg-grid-pattern {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    }
+    .theme-minimalist {
+        background-color: #f8fafc; /* Corresponds to Tailwind's slate-50 */
+    }
+    .dark .theme-minimalist {
+        background-color: #1e293b; /* Corresponds to Tailwind's slate-800 */
+    }
+    .theme-cosmic {
+        background-image: radial-gradient(circle at top right, rgba(186, 230, 253, 0.5), transparent 60%), radial-gradient(circle at bottom left, rgba(221, 214, 254, 0.4), transparent 70%);
+    }
+    .dark .theme-cosmic {
+        background-image: radial-gradient(circle at top right, rgba(30, 58, 138, 0.5), transparent 60%), radial-gradient(circle at bottom left, rgba(76, 29, 149, 0.4), transparent 70%);
+    }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-100 dark:bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
